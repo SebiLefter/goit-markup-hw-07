@@ -1225,7 +1225,25 @@ label {
   display: flex;
   gap: 56px;
 }
+@media screen and (max-width:767px){
+  .section-row-list{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10rem;
 
+  }
+  .section{
+    margin-left: -200px;
+  }
+  .filters-section-list{
+    margin-left: -500px;
+  }
+
+  
+}
 /* Stiliare pentru tableta */
 @media screen and (min-width: 768px) {
   .navbar-list {
@@ -1249,6 +1267,13 @@ label {
 
   .js-open-menu {
     display: none;
+  }
+  .filters-section-list{
+    margin-left: -300px;
+  }
+  .section-row-list{
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .section-list {
